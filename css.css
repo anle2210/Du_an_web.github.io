@@ -1,0 +1,673 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --font1: 'Lato', sans-serif;
+    --font2: 'Montserrat', sans-serif;  /*  cái này in đậm nhưng size nhỏ */
+    --font3: 'Montserrat', sans-serif;  /*  cái này in đậm size to*/
+    --font4: 'Montserrat', sans-serif; /*cái này ko in đậm*/
+    --color1:#588dd3;
+    --color2:#164e8c;
+    --color3:#292828;
+    --color4:#000000;
+    --color5:#ffffff;
+    --color6:#f5f5f5;
+    --color7:#3a3a3a;
+
+}
+.main{
+    box-sizing: border-box;
+}
+.main .header{
+    width: 100%;
+    height: 100px;
+    background-color: var(--color4);
+    display: flex;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+.main .header .logo_left > img{
+    margin-left:50%;
+    margin-right: 50%;
+}
+.main .header .logo_left{
+    width: 25%;
+
+}
+.main .header .logo_right > a{
+    font-family: var(--font1);
+    text-decoration: none;
+    text-align: center;
+    color:var(--color5);
+}
+.main .header .logo_right{
+    width: 25%;
+    padding-top: 35px;
+    margin-left: auto;
+    margin-left: auto;
+    transition: 0.4s;
+}
+.main .header .logo_right:hover{
+    box-shadow: 0 3px var(--color5);
+    opacity: 0.5;
+}
+.main .header .menu{
+    width: 50%;
+}
+.main .header .menu ul{
+    list-style: none;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 25px;
+    width: 100%;
+}
+.main .header .menu ul li{
+    display: inline;
+}
+
+.main .header .menu ul li .search-button{
+    border-radius: 7px;
+    border: 1px solid currentColor;
+    font-size: 0.8em;
+}
+.main .header .menu ul li a{
+    font-family: var(--font1);
+    color: var(--color5);
+    text-transform: uppercase;
+    text-decoration: none;
+    display: inline-block;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1em;
+    padding-top: .6em;
+    padding-bottom: .6em;
+    padding-left: .6em;
+    padding-right: .6em;
+    transition: 0.4s;
+    opacity: 1;
+}
+.main .header .menu ul li a:hover{
+    box-shadow: 0 4px var(--color5);
+    opacity: 0.6;
+}
+body{
+    
+    font-family: Arial, Helvetica, sans-serif;
+    background-color:white;
+    
+
+}
+html{
+    font-family: Arial, Helvetica, sans-serif;
+  
+    
+}
+.sidebar{
+    background-color:white;
+    margin-top: 60px;
+    padding-top: 100px;
+    position: absolute;
+    left: 0;
+    width: 350px;
+    height: 100%;
+}
+
+
+.sidebar a  {
+    
+    color:#fff;
+    display: block;
+    width: 100%;
+    line-height: 60px;
+    text-decoration: none;
+    padding-left: 40px;
+    box-sizing: border-box;     
+    transition: 0.5s;
+    transition-property:#19B3D3 ;
+    
+
+}
+.sidebar a:hover{
+    background: #19B3D3;
+    display: inline-block;
+}
+.content{
+    width: 1000px;
+    margin-left: 380px;
+    padding-top: 190px;
+    display: grid;
+    grid-template-columns: 260px 260px 260px;
+    grid-template-rows: 390px 390px 390px 390px;
+    grid-column-gap:30px ;
+    text-align: center;
+    
+    
+}
+.chon{
+    text-align: center;
+    position:relative;
+    left:380px;
+    top: 150px;
+}
+.h4{
+    text-align: center;
+    position:absolute;
+    top:160px;
+    right: 500px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.pagination a {
+    color: black;
+    float: left;
+    padding:  12px 18px;
+    text-decoration: none;
+}
+.pagination  {
+    position: relative;
+    text-align: center;
+    left: 290px;
+    color: white;
+    border-radius: 50%;
+    
+}
+
+.pagination a:hover:not(.active) {
+    background-color: #ddd;
+    /*Thiết kế hình tròn với CSS*/
+    border-radius:100%;
+    border:  inset;
+
+}
+/* csskhoi */
+.khoi{
+    text-align: center;
+   width: 245px;
+   height: 245px;
+   margin: auto;
+   margin-top: -10px;
+   overflow: hidden;
+   background-color: yellow;
+   position: relative;
+   transition: 0.6s;
+   
+}
+.khoi img{
+    background-color: transparent;
+
+}
+.khoi h3{
+    width: 100%;
+    background-color:#164e8c;
+    color: white;
+    padding:2px;
+    position: absolute;
+    bottom: -50px;
+    transition: 0.6s;
+    opacity: 0.8;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+}
+.khoi:hover h3{
+    bottom: 0px;
+    transition: 0.6s;
+}
+/* csskhoi2 */
+.khoi2{
+    text-align: center;
+   width: 245px;
+   height: 245px;
+   margin: auto;
+   margin-top: -10px;
+   overflow: hidden;
+   background-color: yellow;
+   position: relative;
+   transition: 0.6s;
+   
+}
+.khoi2 img{
+    background-color: transparent;
+
+}
+.khoi2 h3{
+    width: 100%;
+    background-color:#164e8c;
+    color: white;
+    padding:2px;
+    position: absolute;
+    bottom: -50px;
+    transition: 0.6s;
+    opacity: 0.8;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+}
+.khoi2:hover h3{
+    bottom: 0px;
+    transition: 0.6s;
+}
+/* csskhoi3 */
+.khoi3{
+    text-align: center;
+   width: 245px;
+   height: 245px;
+   margin: auto;
+   margin-top: -10px;
+   overflow: hidden;
+   background-color: yellow;
+   position: relative;
+   transition: 0.6s;
+   
+}
+.khoi3 img{
+    background-color: transparent;
+
+}
+.khoi3 h3{
+    width: 100%;
+    background-color:#164e8c;
+    color: white;
+    padding:2px;
+    position: absolute;
+    bottom: -50px;
+    transition: 0.6s;
+    opacity: 0.8;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+}
+.khoi3:hover h3{
+    bottom: 0px;
+    transition: 0.6s;
+}
+/* csskhoi4 */
+.khoi4{
+    text-align: center;
+   width: 245px;
+   height: 245px;
+   margin: auto;
+   margin-top: -10px;
+   overflow: hidden;
+   background-color: yellow;
+   position: relative;
+   transition: 0.6s;
+   
+}
+.khoi4 img{
+    background-color: transparent;
+
+}
+.khoi4 h3{
+    width: 100%;
+    background-color:#164e8c;
+    color: white;
+    padding:2px;
+    position: absolute;
+    bottom: -50px;
+    transition: 0.6s;
+    opacity: 0.8;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+}
+.khoi4:hover h3{
+    bottom: 0px;
+    transition: 0.6s;
+}
+/* csskhoi5 */
+.khoi5{
+    text-align: center;
+   width: 245px;
+   height: 245px;
+   margin: auto;
+   margin-top: -10px;
+   overflow: hidden;
+   background-color: yellow;
+   position: relative;
+   transition: 0.6s;
+   
+}
+.khoi5 img{
+    background-color: transparent;
+
+}
+.khoi5 h3{
+    width: 100%;
+    background-color:#164e8c;
+    color: white;
+    padding:2px;
+    position: absolute;
+    bottom: -50px;
+    transition: 0.6s;
+    opacity: 0.8;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+}
+.khoi5:hover h3{
+    bottom: 0px;
+    transition: 0.6s;
+}
+/* csskhoi6 */
+.khoi6{
+    text-align: center;
+   width: 245px;
+   height: 245px;
+   margin: auto;
+   margin-top: -10px;
+   overflow: hidden;
+   background-color: yellow;
+   position: relative;
+   transition: 0.6s;
+   
+}
+.khoi6 img{
+    background-color: transparent;
+
+}
+.khoi6 h3{
+    width: 100%;
+    background-color:#164e8c;
+    color: white;
+    padding:2px;
+    position: absolute;
+    bottom: -50px;
+    transition: 0.6s;
+    opacity: 0.8;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+}
+.khoi6:hover h3{
+    bottom: 0px;
+    transition: 0.6s;
+}
+/* csskhoi7 */
+.khoi7{
+    text-align: center;
+   width: 245px;
+   height: 245px;
+   margin: auto;
+   margin-top: -10px;
+   overflow: hidden;
+   background-color: yellow;
+   position: relative;
+   transition: 0.6s;
+   
+}
+.khoi7 img{
+    background-color: transparent;
+
+}
+.khoi7 h3{
+    width: 100%;
+    background-color:#164e8c;
+    color: white;
+    padding:2px;
+    position: absolute;
+    bottom: -50px;
+    transition: 0.6s;
+    opacity: 0.8;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+}
+.khoi7:hover h3{
+    bottom: 0px;
+    transition: 0.6s;
+}
+/* csskhoi8 */
+.khoi8{
+    text-align: center;
+   width: 245px;
+   height: 245px;
+   margin: auto;
+   margin-top: -10px;
+   overflow: hidden;
+   background-color: yellow;
+   position: relative;
+   transition: 0.6s;
+   
+}
+.khoi8 img{
+    background-color: transparent;
+
+}
+.khoi8 h3{
+    width: 100%;
+    background-color:#164e8c;
+    color: white;
+    padding:2px;
+    position: absolute;
+    bottom: -50px;
+    transition: 0.6s;
+    opacity: 0.8;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+}
+.khoi8:hover h3{
+    bottom: 0px;
+    transition: 0.6s;
+}
+/* csskhoi9 */
+.khoi9{
+    text-align: center;
+   width: 245px;
+   height: 245px;
+   margin: auto;
+   margin-top: -10px;
+   overflow: hidden;
+   background-color: yellow;
+   position: relative;
+   transition: 0.6s;
+   
+}
+.khoi9 img{
+    background-color: transparent;
+
+}
+.khoi9 h3{
+    width: 100%;
+    background-color:#164e8c;
+    color: white;
+    padding:2px;
+    position: absolute;
+    bottom: -50px;
+    transition: 0.6s;
+    opacity: 0.8;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+}
+.khoi9:hover h3{
+    bottom: 0px;
+    transition: 0.6s;
+}
+/* csskhoi10 */
+.khoi10{
+    text-align: center;
+   width: 245px;
+   height: 245px;
+   margin: auto;
+   margin-top: -10px;
+   overflow: hidden;
+   background-color: yellow;
+   position: relative;
+   transition: 0.6s;
+   
+}
+.khoi10 img{
+    background-color: transparent;
+
+}
+.khoi10 h3{
+    width: 100%;
+    background-color:#164e8c;
+    color: white;
+    padding:2px;
+    position: absolute;
+    bottom: -50px;
+    transition: 0.6s;
+    opacity: 0.8;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+}
+.khoi10:hover h3{
+    bottom: 0px;
+    transition: 0.6s;
+}
+/* csskhoi11 */
+.khoi11{
+    text-align: center;
+   width: 245px;
+   height: 245px;
+   margin: auto;
+   margin-top: -10px;
+   overflow: hidden;
+   background-color: yellow;
+   position: relative;
+   transition: 0.6s;
+   
+}
+.khoi11 img{
+    background-color: transparent;
+
+}
+.khoi11 h3{
+    width: 100%;
+    background-color:#164e8c;
+    color: white;
+    padding:2px;
+    position: absolute;
+    bottom: -50px;
+    transition: 0.6s;
+    opacity: 0.8;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+}
+.khoi11:hover h3{
+    bottom: 0px;
+    transition: 0.6s;
+}
+/* csskhoi12 */
+.khoi12{
+    text-align: center;
+   width: 245px;
+   height: 245px;
+   margin: auto;
+   margin-top: -10px;
+   overflow: hidden;
+   background-color: yellow;
+   position: relative;
+   transition: 0.6s;
+   
+}
+.khoi12 img{
+    background-color: transparent;
+
+}
+.khoi12 h3{
+    width: 100%;
+    background-color:#164e8c;
+    color: white;
+    padding:2px;
+    position: absolute;
+    bottom: -50px;
+    transition: 0.6s;
+    opacity: 0.8;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+}
+.khoi12:hover h3{
+    bottom: 0px;
+    transition: 0.6s;
+}
+.khoifooter{
+    width: 1050px;
+    height: 250px;
+    display: grid;
+    margin-left: 212px;
+    margin-right: 212px;
+    grid-template-columns: 350px 350px 350px;
+    background-color: #fff;
+    padding-top: 37px;
+    
+    
+}
+.footer1{
+    text-align: left;
+}
+.dauft1{
+    font-size: 1em;
+    font-weight: 600;
+    line-height: 1.05;
+    letter-spacing: .05em;
+    text-transform: uppercase;
+    color: #3a3a3a;
+    box-sizing: border-box;
+    font-family:Arial, Helvetica, sans-serif;
+
+
+}
+.divider{
+    width: 30px;
+    height: 4px;
+    background-color:rgb(212, 208, 208);
+    display: inline-block;
+}
+.text1{
+    text-align: left ;
+    box-sizing: border-box;
+    display: block;
+    color: #3a3a3a;
+    font-weight: 400;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+}
+
+.footer2{
+    padding-left: 20px;
+}
+.dauft2{
+    text-align: left;
+    font-size: 1em;
+    font-weight: 600;
+    line-height: 1.05;
+    letter-spacing: .05em;
+    text-transform: uppercase;
+    color: #3a3a3a;
+    box-sizing: border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.text2{
+    text-align: left ;
+    box-sizing: border-box;
+    display: block;
+    color: #3a3a3a;
+    font-weight: 400;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+}
+.footer3{
+    padding-left: 50px;
+    color: #262626;
+    display: inline-block;
+    font-weight: 400;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    box-sizing: border-box;
+}
+/* Mui ten lên dau trang */
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 60px;
+    right: 10px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: #fff;
+    border: 2px solid #ccc;
+    color: white;
+    cursor: pointer;
+    border-radius: 30px;
+    opacity: 0.7;
+    }
+.search-bar{
+    padding-left: 30px;
+    
+}

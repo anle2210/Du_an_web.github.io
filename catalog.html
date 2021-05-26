@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css.css">
+    
+    <title>sidebar scooter</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+        
+        
+    
+</head>
+
+<button id="myBtn" title="Lên đầu trang"><img src="./img/icon-256x256.png" title='lên đầu trang' width='50px'/></button>
+<script>
+window.onscroll = function() {scrollFunction()};
+function scrollFunction() {
+
+if (document.body.scrollTop > 600 || document.documentElement.scrollTop > 600) {
+document.getElementById("myBtn").style.display = "block";
+} else {
+document.getElementById("myBtn").style.display = "none";
+}
+}
+
+document.getElementById('myBtn').addEventListener("click", function(){
+document.body.scrollTop = 0;
+document.documentElement.scrollTop = 0;
+});
+</script>
+<body>
+    <div class="main">
+        <div class="header">
+            <div class="logo_left"><img width="80" height="82" src="/images/logo.png" alt=""></div>
+            <div class="menu">
+                <ul>
+                    <li>
+                        <a href="" class="search-button"><i class="fa fa-search" aria-hidden="true"></i></a>
+                    </li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="catalog.html">catalog</a></li>
+                    <li><a href="aboutus.html">About us</a></li>
+                    <li><a href="whyus.html">Why Us</a></li>
+                    <li><a href="FAQ.html">FAQ</a></li>
+                    <li><a href="contactUs.html">Contact us</a></li>
+                </ul>
+            </div>
+            <div class="logo_right"><a href="">CART / 0.00$ <i class="fas fa-cart-plus"></i></a></div>
+        </div>
+        <div class="sidebar">
+            <a href="#"><span style="color: black;"><b>Trang Chủ</b></span></a>
+            <a href="#"><span style="color: black;" ><b>Mục Lục</b></span></a>
+            <a href="#"><span style="color: black;"><b>Danh Mục Sản Phẩm</b></span></a>
+            <a href="https://bigtechforless.com/catalog/?orderby=menu_order"><span style ="color: black;"><b>Tìm Kiếm Sản Phẩm Nhanh</b></span></a>  
+            <a><span style="color: black;"><b>Tìm Kiếm Theo Tên Sản Phẩm</b></span></a>
+            <form action="" class="search-bar">
+                <input type="search" name="search" pattern=".*\S.*" required>
+                <button class="search-btn" type="submit">
+                  <span>Search</span>
+                </button>
+              </form>
+            <hr style="color: black;width: 250px;">
+            <a href="#"><span style="color: black;"><b>Scooter Sale</b></span></a>
+            
+        </div> 
+        <!-- timkiem -->
+        
+        
+        <!-- showing ket qua -->
+        <div class="h4">
+        <h4>Showing 1-12 of 53 result</h4>
+        </div>  
+            <div class="chon">
+        <select  style="width: 200px; height: 40px; font-size: 15px; font-family: Arial, Helvetica, sans-serif;">
+            <option ><b>Default sorting</b></option>
+            <option style="font-family: Arial, Helvetica, sans-serif;" value="1"><b>Sort by popularity</b></option>
+            <option  style="font-family: Arial, Helvetica, sans-serif;"value="2"><b>Sort by latest</b></option>
+            <option style="font-family: Arial, Helvetica, sans-serif;" value="3"><b>Sort by price:how to high</b></option>
+            <option  style="font-family: Arial, Helvetica, sans-serif;"value="4"><b>Sort by price:how to low</b></option>
+        </select>
+        </div>
+       
+            <div class="content">
+        <div class="product">   
+            <div class="khoi">    
+             <a href="https://www.google.com/"><img src="./img/4.jpeg" alt="" width="245px" height="245px"></a>
+            <a href="https://www.google.com/"><h3>Quick View</h3></a>
+            </div>
+            <p><samp>RAZOR</samp></p>
+            <p ><a style="color: black; text-decoration: none;font-family: Arial, Helvetica, sans-serif;" href="#" >Black Label E100 Electric <br>Scooter</a></p>
+            <h4 style="font-family: Arial, Helvetica, sans-serif;"><b>125.00$</b></h4>
+           
+        </div>
+        <div class="sanpham2">
+            <div class="khoi2">
+            <a href="https://www.google.com/"><img src="./img/5.jpeg" alt="" width="245px" height="245px"></a>
+            <a href="https://www.google.com/"><h3>Quick View</h3></a>
+            </div>
+            <p><samp>RAZOR</samp></p>
+            <p><a style="color:black; text-decoration:none ;font-family: Arial, Helvetica, sans-serif;" href="#">Black Label E90 Electric <br>Scooter</a></p>
+            <h4 style="font-family: Arial, Helvetica, sans-serif;"><b>130.00$</b></h4>
+    
+        </div>
+        <div class="product-3">
+            <div class="khoi3">
+                <a href="https://www.google.com/"><img src="./img/6.jpg" alt="" width="245px"  height="245px"></a>
+            <a href="https://www.google.com/"><h3>Quick View</h3></a>
+            </div>
+            <p><samp>PURE ELECTRIC SCOOTER</samp></p>
+            <p><a style="color:black; text-decoration:none ;font-family: Arial, Helvetica, sans-serif;" href="#">Chaos 12v 30w Black Kids Electric Scooter</a></p>
+            <h4 style="font-family: Arial, Helvetica, sans-serif;"><b>140.00$</b></h4>
+        </div>
+        <div class="product-4">
+           <div class="khoi4">
+            <a href="https://www.google.com/"><img src="./img/7.jpg" alt="" width="245px"  height="245px"></a>
+            <a href="https://www.google.com/"><h3>Quick View</h3></a>
+            </div>
+            <p><samp>PURE ELECTRIC SCOOTER</samp></p>
+            <p><a style="color:black; text-decoration:none ;font-family: Arial, Helvetica, sans-serif;" href="#">Chaos 12v 30w Blue Kids Electric Scooter</a></p>
+            <h4 style="font-family: Arial, Helvetica, sans-serif;"><b>105.00$</b></h4>
+        </div>
+        <div class="product-5">
+            <div class="khoi5">
+                <a href="https://www.google.com/"><img src="./img/8.jpg" alt="" width="245px"  height="245px"></a>
+            <a href="https://www.google.com/"><h3>Quick View</h3></a>
+            </div>
+            <p><samp>PURE ELECTRIC SCOOTER</samp></p>
+            <p><a style="color:black; text-decoration:none ;font-family: Arial, Helvetica, sans-serif;" href="#"> Chaos 12v 30w Green Kids Electric Scooter</a></p>
+            <h4 style="font-family: Arial, Helvetica, sans-serif;"><b>89.99$</b></h4>
+        </div>
+        <div class="product-6">
+            <div class="khoi6">
+                <a href="https://www.google.com/"><img src="./img/9.jpg" alt="" width="245px"  height="245px"></a>
+            <a href="https://www.google.com/"><h3>Quick View</h3></a>
+            </div>
+            <p><samp>PURE ELECTRIC SCOOTER</samp></p>
+            <p><a style="color:black; text-decoration:none ;font-family: Arial, Helvetica, sans-serif;" href="#">Chaos 12v 30w Orange Kids Electric Scooter</a></p>
+            <h4 style="font-family: Arial, Helvetica, sans-serif;"><b>100.00$</b></h4>
+        </div>
+        <div class="product-7">
+            <div class="khoi7">
+                <a href="https://www.google.com/"><img src="./img/19.jpg" alt="" width="245px"  height="245px"></a>
+            <a href="https://www.google.com/"><h3>Quick View</h3></a>
+            </div>
+            <p><samp>PURE ELECTRIC SCOOTER</samp></p>
+            <p><a style="color:black; text-decoration:none ;font-family: Arial, Helvetica, sans-serif;" href="#">Chaos 24v 200w Black Kids Folding Electric Scooter</a></p>
+            <h4 style="font-family: Arial, Helvetica, sans-serif;"><b>180.00$</b></h4>
+        </div>
+        <div class="product-8">
+            <div class="khoi8">
+                <a href="https://www.google.com/"><img src="./img/20.jpg" alt="" width="245px"  height="245px"></a>
+            <a href="https://www.google.com/"><h3>Quick View</h3></a>
+            </div>
+            <p><samp>PURE ELECTRIC SCOOTER</samp></p>
+            <p><a style="color:black; text-decoration:none ;font-family: Arial, Helvetica, sans-serif;" href="#">Chaos 48v 1000w Adult Electric Scooter C166</a></p>
+            <h4 style="font-family: Arial, Helvetica, sans-serif;"><b>490.00$</b></h4>
+        </div>
+        <div class="product-9">
+            <div class="khoi9">
+                <a href="https://www.google.com/"><img src="./img/21.jpg" alt="" width="245px"  height="245px"></a>
+            <a href="https://www.google.com/"><h3>Quick View</h3></a>
+            </div>
+            <p><samp>PURE ELECTRIC SCOOTER</samp></p>
+            <p><a style="color:black; text-decoration:none ;font-family: Arial, Helvetica, sans-serif;" href="#">Chaos 48v 1000w Hub Drive Off Road Adult Electric Scooter</a></p>
+            <h4 style="font-family: Arial, Helvetica, sans-serif;"><b>500.00$</b></h4>
+        </div>  
+        <div class="product-10">
+            <div class="khoi10">
+                <a href="https://www.google.com/"><img src="./img/22.jpg" alt="" width="245px"height="245px"></a>
+            <a href="https://www.google.com/"><h3>Quick View</h3></a>
+            </div>
+            <p><samp>PURE ELECTRIC SCOOTER</samp></p>
+            <p><a style="color:black; text-decoration:none ;font-family: Arial, Helvetica, sans-serif;" href="#">Chaos 48v 1600w Big Wheel Adult Electric Scooter</a></p>
+            <h4 style="font-family: Arial, Helvetica, sans-serif;"><b>525.00$</b></h4>
+        </div>
+        <div class="product-11">
+            <div class="khoi11">
+            <a href="https://www.google.com/"> <img src="./img/33.jpg" alt="" width="245px"  height="245px"></a>
+            <a href="https://www.google.com/"><h3>Quick View</h3></a>
+            </div>
+            <p><samp>PURE ELECTRIC SCOOTER</samp></p>
+            <p><a style="color:black; text-decoration:none ;font-family: Arial, Helvetica, sans-serif;" href="#">Chaos 48v 1600w Big Wheel Off Road Adult Electric Scooter</a></p>
+            <h4 style="font-family: Arial, Helvetica, sans-serif;"><b>550.00$</b></h4>
+        </div>
+        <div class="product-12">
+            <div class="khoi12">
+                <a href="https://www.google.com/"> <img src="./img/24.jpg" alt="" width="245px"  height="245px"></a>
+            <a href="https://www.google.com/"><h3>Quick View</h3></a>
+            </div>
+            <p><samp>PURE ELECTRIC SCOOTER</samp></p>
+            <p><a style="color:black; text-decoration:none ;font-family: Arial, Helvetica, sans-serif;" href="#">Chaos 48v 1600w Hub Drive Adult Electric Scooter</a></p>
+            <h4 style="font-family: Arial, Helvetica, sans-serif;"><b>590.00$</b></h4>
+        </div>
+        <div class="pagination">
+         
+            <a href="#">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">4</a>
+          
+            <a href="#">></a>
+          </div>
+        </div>
+        <br>
+        <br>
+       <hr style="color:#fff;" width="100%">
+       <br>
+       <br>
+       <div class="khoifooter">
+        <div class="footer1">
+            <span class="dauft1">About</span>
+            <br>
+            <span class="divider"></span>
+            <div class="text1">
+                <p>
+                    Based in London, Techvup supplies high quality<br>
+                     electric scooters across the whole of the<br> Europe.
+                      Offering outstanding value and first-<br>class customer service, 
+                      eScooter makes<br> micromobility accessible, affordable and fun.
+                </p>
+            </div>
+        </div>
+        <div class="footer2">
+            <span class="dauft2">DISCLAIMER</span>
+            <br>
+            <span class="divider"></span>
+            <div class="text2">
+                <p>
+                    Electric scooters are not permitted to be used <br>on footpaths,
+                     public roads or cycle lanes.<br>
+                      Customers accept full responsibility
+                      for operating their electric scooter in
+                       accordance with country and local laws.
+                </p>
+            </div>
+            
+        </div>
+        <div class="footer3">
+            <a style="text-decoration: none; color: #262626;" href="https://www.google.com/">About Us</a>
+            <br>
+            
+            <hr style="color: #fff;width:350px;">
+            
+            
+            <a style="text-decoration: none; color: #262626;" href="https://www.google.com/">Privacy Policy</a>
+            <hr style="color: #fff;width:350px;">
+            <a style="text-decoration: none; color: #262626;" href="https://www.google.com/">TERMS AND CONDITIONS</a>
+        </div>
+    </div>
+    
+    </div>
+    
+        
+   
+</body>
+</html> 
